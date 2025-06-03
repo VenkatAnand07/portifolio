@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Coral+Pixels&family=Honk&display=swap');
+.learn{
+    border-color:blue ;
+    border-width: 3px;
+    border-style:solid ;
+    border-radius: 30px;
+    border-image:url('https://res.cloudinary.com/dzgem0pzh/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1745929858/WhatsApp_Image_2025-04-16_at_20.18.28_cfc6ce5d_lsxuzb.jpg') 30 round;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 900;
+    padding: 40px;
+    margin: 20px;
+}
+.heading{
+    display:inline;  
+    border-color:blue ;
+    border-width: 5px;
+    border-style:solid ;
+    border: radius 10px;
+}

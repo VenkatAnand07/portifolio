@@ -1,0 +1,149 @@
+/* === General Styles === */
+body {
+    margin: 0;
+    font-family: 'Share Tech', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* === Navbar / Header === */
+.navbar {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.font {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 28px;
+    color: #00d8ff;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.element {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.element:hover {
+    color: #00d8ff;
+}
+
+/* === Personal Section === */
+.personal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+    align-items: center;
+}
+
+.heading {
+    font-size: 36px;
+    font-family: 'EB Garamond', serif;
+    color: #222;
+}
+
+.self {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.para1 img.anand {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Skills Section === */
+.our1 {
+    text-align: center;
+    padding: 40px 0 10px;
+    background-color: #00d8ff;
+    color: white;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.con-left, .con-middle, .con-right {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #00d8ff;
+}
+
+/* === Contact Section === */
+.contact-details {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #00d8ff;
+}
+
+.social-logos {
+    margin-top: 20px;
+}
+
+.social-logos img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

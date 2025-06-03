@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Honk&display=swap');
+.page{
+    height: 10%;
+}
+header{
+    text-align: center;
+    background-color: blue;
+    color: rgb(245, 246, 247);
+    display: flexbox;
+    font-size: 20px;
+}
+p{
+    color: hsl(360, 180, 50);
+    font-family: "Honk", system-ui;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.0;
+}
+.image{
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+h1{
+    font-size: 15px;
+    display: flex;
+}
+.hello{
+    padding-left: 10px;
+}

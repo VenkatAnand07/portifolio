@@ -1,0 +1,14 @@
+h1{
+  text-align: center;
+  color: blueviolet;
+  background-color: lightblue;
+  font-weight: bold;
+}
+ P{
+  font-size: 17px;
+ }
+ table{
+  border: 1px black;
+  border-collapse: collapse;
+  width:50%;
+ }
