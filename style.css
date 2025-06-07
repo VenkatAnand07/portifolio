@@ -67,7 +67,7 @@ html, body {
   color: black;
 }
 .navbar-image {
-  flex:0.27;
+  flex:0.29;
   display:flex;
   justify-content: center;
    align-items:center;
@@ -76,7 +76,7 @@ html, body {
 }
 
 .nav-img {
-  height: 400px;
+  height: 450px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(225, 168, 8, 0.3);
@@ -175,11 +175,20 @@ html, body {
 .con-middle {
   border-style:groove;
   border-color:rgb(211, 191, 75);
+  border-radius: 80px;
   padding: 70px;
   height: 200px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   font-weight: 600;
+  transition:all 0.3s ease-out;
+}
+
+.con-left:hover,
+.con-right:hover,
+.con-middle:hover{
+transform: scale(1.1);
+   box-shadow:2px 2px 12px 2px  rgb(218, 198, 85);
 }
 
 .contact-details {
@@ -201,12 +210,12 @@ ul {
 }
 
 .insta,
-.linkedin {
+.linkedin,
+.github{
   height: 20px;
   width: auto;
   padding-left: 10px;
-}
-
+} 
 mark {
   background-color: rgb(154, 69, 69);
   color: bisque;
@@ -286,8 +295,7 @@ button:hover{
   }
 }
 
-/* For phones */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .hello {
     font-size: 30px;
   }
@@ -329,219 +337,3 @@ button:hover{
     padding: 20px;
   }
 }
-
-/*<@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Cal+Sans&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: rgb(30, 27, 27);
-  font-family: "EB Garamond", serif;
-} 
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  background-color: rgb(30, 27, 27);
-  min-height: 80vh;
-}
-
-.hero-text {
-  flex: 1 1 300px;
-  color: white;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.hello {
-  color: rgb(246, 226, 113);
-  font-size: 40px;
-}
-
-.hero-title {
-  font-size: 36px;
-  margin: 20px 0;
-}
-
-.highlight {
-  color: rgb(253, 213, 90);
-}
-
-.hero-desc {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 12px 20px;
-  font-family: "Cal Sans", sans-serif;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: rgb(255, 213, 77);
-  color: black;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: rgb(211, 191, 75);
-  transform: scale(1.05);
-}
-
-.navbar-image {
-  flex: 1 1 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.nav-img {
-  height: 400px;
-  width: 65%;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(220, 169, 14, 0.3);
-  transition: transform 0.8s ease, box-shadow 0.3s ease;
-  object-fit: contain;
-}
-
-.nav-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(255, 215, 100, 0.5);
-  background-color: rgb(211, 191, 75);
-}
-.hi {
-  text-align: center;
-  color: rgb(185, 160, 99);
-  font-size: 18px;
-  padding: 20px;
-}
-
-.personal {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px;
-  color: aliceblue;
-}
-
-.para {
-  flex: 2;
-  min-width: 300px;
-  padding: 10px;
-}
-
-.para1 {
-  flex: 1;
-  min-width: 200px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.anand {
-  height: auto;
-  width: 100%;
-  max-width: 240px;
-  border-radius: 50%;
-  border: 3px double rgb(235, 216, 103);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
-}
-
-.self {
-  font-size: 20px;
-}
-
-.heading {
-  color: rgb(185, 160, 99);
-  font-weight: 600;
-  font-size: 25px;
-}
-.our1 {
-  color: rgb(246, 226, 113);
-  text-align: center;
-  padding: 40px 0 10px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  color: aliceblue;
-  padding: 40px;
-}
-
-.con-left,
-.con-right,
-.con-middle {
-  border: 1px solid rgb(211, 191, 75);
-  padding: 30px;
-  text-align: center;
-  font-weight: 600;
-  width: 100%;
-  max-width: 280px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-.contact-details {
-  padding-top: 40px;
-  text-align: center;
-  color: aliceblue;
-  font-size: 20px;
-}
-
-.contact {
-  color: rgb(255, 234, 112);
-  font-weight: 600;
-}
-
-.social-logos {
-  margin-top: 20px;
-}
-
-.insta,
-.linkedin {
-  height: 30px;
-  width: auto;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-
-.insta:hover,
-.linkedin:hover {
-  transform: scale(1.2);
-}
-button {
-  color: black;
-  height: 40px;
-  width: 80px;
-  border-radius: 10px;
-  font-family: "Cal Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: rgb(255, 213, 77);
-  border: none;
-}
-button:hover {
-  background-color: rgb(211, 191, 75);
-  transform: scale(1.05);
-}*/
-/* For tablets and smaller screens */
-
