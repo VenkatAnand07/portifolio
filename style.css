@@ -67,7 +67,7 @@ html, body {
   color: black;
 }
 .navbar-image {
-  flex:0.29;
+  flex:0.25.5;
   display:flex;
   justify-content: center;
    align-items:center;
@@ -78,14 +78,14 @@ html, body {
 .nav-img {
   height: 450px;
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(225, 168, 8, 0.3);
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(240, 236, 19, 0.5);
    transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .nav-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(255, 215, 100, 0.5);
+  box-shadow: 0 20px 40px rgba(211, 191, 75,0.2);
   background-color:rgb(211, 191, 75);
 }
 .hi{
@@ -207,14 +207,14 @@ transform: scale(1.1);
 
 ul {
   padding-right: 20px;
-}
-
+}  
 .insta,
 .linkedin,
 .github{
   height: 20px;
   width: auto;
-  padding-left: 10px;
+ border-radius: 10px;
+margin: 2px;
 } 
 mark {
   background-color: rgb(154, 69, 69);
@@ -226,21 +226,28 @@ mark {
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  box-shadow: 2px 2px 5px rgba(33, 33, 34, 0.8);
+  background-color: rgb(252, 223, 60);
 }
 button:hover{
   background-color:rgb(211, 191, 75);
   transform: scale(1.05);
-  box-shadow: 2px 2px 10px rgb(237, 243, 52);
+  box-shadow: 2px 2px 16px rgb(232, 199, 54);
+  color: rgb(255, 255, 255);
+  float: inline-end;
 }
 .an{
   color: rgb(246, 226, 113);
 }
 .java{
   margin-top:30px;
-  height: 35px;
+  height: 25px;
   width:auto;
   border-radius: 70px;
+}
+.dj-kottu{
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
 }
   @media (max-width: 1024px) {
   .navbar {
@@ -295,12 +302,15 @@ button:hover{
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .hello {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .hero-title {
+    font-size: 23px;
+  }
+  .highlight{
     font-size: 28px;
   }
 
@@ -320,20 +330,38 @@ button:hover{
     height: 150px;
     width: 150px;
   }
-
+.hero-buttons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-img{
+  border-radius: 800px;
+}
   .btn {
     font-size: 14px;
     padding: 10px 16px;
+    
+  }
+  .heading,
+  .self{
+     padding-right: 40px;
   }
 
   .con-left, .con-middle, .con-right {
-    width: 90%;
+    width: 65%; 
     padding: 20px;
     font-size: 16px;
   }
+  .contact{
+    font-size: 30px;
 
+  }
   .contact-details {
     font-size: 16px;
-    padding: 20px;
+    /*width: auto;*/
+    padding: 100px;
+    height: 35vh;
   }
 }
